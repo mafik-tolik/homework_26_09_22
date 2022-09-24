@@ -44,7 +44,7 @@ void Ex19()
 void Ex21()
 {
 
-    int input_coordinates(int x, int y, int z)
+    void input_coordinates(int x, int y, int z)
     {
         Console.Write("x:");
         x = Convert.ToInt32(Console.ReadLine());
@@ -52,7 +52,6 @@ void Ex21()
         y = Convert.ToInt32(Console.ReadLine());
         Console.Write("z:");
         z = Convert.ToInt32(Console.ReadLine());
-        return Console.WriteLine(y, z);
     }
 
     int x1 = 0, y1 = 0, z1 = 0;
@@ -60,8 +59,9 @@ void Ex21()
 
     Console.WriteLine("Введите координаты точки A:");
     input_coordinates(x1, y1, z1);
+    Console.WriteLine($"A: ({x1}, {y1}, {z1})");
 
     Console.WriteLine("Введите координаты точки B:");
     input_coordinates(x2, y2, z2);
-
+    Console.WriteLine($"B: ({x2}, {y2}, {z2})");
 }
